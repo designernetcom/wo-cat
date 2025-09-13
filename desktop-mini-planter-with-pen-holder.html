@@ -6,7 +6,7 @@
     <title>Desktop Mini Planter with Pen Holder - WO Group</title>
     <link rel="icon" href="assets/images/favicon/icon.png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
-    <style>
+      <style>
         :root {
             --primary-color: #2563eb;
             --secondary-color: #1e293b;
@@ -445,55 +445,6 @@
             font-size: 0.9rem;
         }
 
-        /* Specifications */
-        .specifications {
-            background: white;
-            padding: 2rem;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow-light);
-            margin: 2rem 0;
-        }
-
-        .specifications h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.8rem;
-            margin-bottom: 1.5rem;
-            color: var(--text-primary);
-        }
-
-        .spec-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-        }
-
-        .spec-item {
-            display: flex;
-            justify-content: space-between;
-            padding: 0.75rem;
-            background: var(--surface);
-            border-radius: 8px;
-            transition: var(--transition);
-        }
-
-        .spec-item:hover {
-            background: var(--green-primary);
-            color: white;
-            transform: translateX(5px);
-        }
-
-        .spec-label {
-            font-weight: 600;
-        }
-
-        .spec-value {
-            color: var(--text-secondary);
-        }
-
-        .spec-item:hover .spec-value {
-            color: rgba(255, 255, 255, 0.9);
-        }
-
         /* CTA Section */
         .cta-section {
             background: linear-gradient(135deg, var(--surface) 0%, white 100%);
@@ -629,9 +580,7 @@
             padding: 2rem 0;
         }
 
-        /* Enhanced Mobile Responsive Design */
-        
-        /* Large Tablets and Small Desktops */
+        /* Responsive Design */
         @media (max-width: 1024px) {
             .main-content {
                 padding: 3rem 1.5rem;
@@ -646,13 +595,8 @@
                 grid-template-columns: repeat(2, 1fr);
                 gap: 1.25rem;
             }
-
-            .spec-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
         }
 
-        /* Tablets */
         @media (max-width: 968px) {
             .main-content {
                 grid-template-columns: 1fr;
@@ -718,17 +662,13 @@
                 gap: 0.75rem;
             }
 
-            .thumbnail {
+            /* .thumbnail {
                 height: 80px;
-            }
+            } */
 
             .features-grid {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 1rem;
-            }
-
-            .spec-grid {
-                grid-template-columns: 1fr;
             }
 
             .contact-grid {
@@ -737,7 +677,6 @@
             }
         }
 
-        /* Large Mobile Phones */
         @media (max-width: 768px) {
             .hero {
                 padding: 4rem 0;
@@ -804,17 +743,6 @@
                 margin: 0 auto 1rem;
             }
 
-            .specifications {
-                padding: 1.5rem;
-                margin: 1.5rem 0;
-            }
-
-            .specifications h3 {
-                font-size: 1.6rem;
-                text-align: center;
-                margin-bottom: 1.25rem;
-            }
-
             .cta-section {
                 padding: 2rem 1.5rem;
                 margin: 2rem 0;
@@ -863,12 +791,11 @@
                 gap: 0.5rem;
             }
 
-            .thumbnail {
+            /* .thumbnail {
                 height: 70px;
-            }
+            } */
         }
 
-        /* Standard Mobile Phones */
         @media (max-width: 640px) {
             .header {
                 padding: 0.75rem 0;
@@ -986,19 +913,6 @@
                 font-size: 0.85rem;
             }
 
-            .specifications {
-                padding: 1.25rem;
-            }
-
-            .specifications h3 {
-                font-size: 1.4rem;
-            }
-
-            .spec-item {
-                padding: 0.6rem;
-                font-size: 0.9rem;
-            }
-
             .cta-section {
                 padding: 1.5rem 1rem;
             }
@@ -1045,9 +959,9 @@
                 height: 250px;
             }
 
-            .thumbnail {
+            /* .thumbnail {
                 height: 60px;
-            }
+            } */
 
             .footer {
                 padding: 1.5rem 1rem;
@@ -1055,7 +969,6 @@
             }
         }
 
-        /* Small Mobile Phones */
         @media (max-width: 480px) {
             .hero h1 {
                 font-size: 1.75rem;
@@ -1081,21 +994,16 @@
                 grid-template-columns: repeat(2, 1fr);
             }
 
-            .thumbnail {
+            /* .thumbnail {
                 height: 50px;
-            }
+            } */
 
-            .features h3,
-            .specifications h3 {
+            .features h3 {
                 font-size: 1.2rem;
             }
 
             .feature-card {
                 padding: 0.875rem;
-            }
-
-            .specifications {
-                padding: 1rem;
             }
 
             .cta-section {
@@ -1113,7 +1021,6 @@
             }
         }
 
-        /* Extra Small Mobile Phones */
         @media (max-width: 360px) {
             .hero {
                 padding: 2.5rem 0;
@@ -1143,10 +1050,6 @@
                 padding: 0.75rem;
             }
 
-            .specifications {
-                padding: 0.875rem;
-            }
-
             .btn {
                 max-width: 200px;
                 padding: 0.6rem 0.875rem;
@@ -1160,9 +1063,9 @@
                 gap: 0.375rem;
             }
 
-            .thumbnail {
+            /* .thumbnail {
                 height: 45px;
-            }
+            } */
         }
 
         /* Touch-friendly improvements */
@@ -1189,8 +1092,7 @@
             }
 
             .feature-card,
-            .contact-item,
-            .spec-item {
+            .contact-item {
                 cursor: pointer;
                 -webkit-tap-highlight-color: rgba(5, 150, 105, 0.1);
             }
